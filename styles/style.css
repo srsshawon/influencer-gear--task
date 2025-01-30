@@ -42,3 +42,74 @@
     font-size: 0.93rem;
     font-weight: 600;
 }
+
+/* hero section style */
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 123px;
+    margin-top: 144px;
+    margin-bottom: 100px;
+}
+.hero-title{
+    color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.hero-description{color: rgb(58, 58, 58);
+    font-family: Poppins;
+    font-size: 0.94rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.hero-btn{
+    border-radius: 38px;
+    background: rgb(224, 44, 109);
+    border: none;
+    padding: 9px 22px 9px 22px;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 0.94rem;
+    font-weight: 700;
+}
+
+
+/* responsive design for mobile  */
+
+@media screen and (max-width: 576px) {
+    .navbar{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-title{
+        text-align: center;
+        margin-left: 50px;
+    }
+    .nav-menu ul{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .nav-menu ul li a{
+        text-align: center;
+    }
+
+    .hero{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-content{
+        max-width: 576px;
+        text-align: center;
+    }
+}
